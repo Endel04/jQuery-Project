@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root{
+    --w-color:#ffffff;
+    --b-color:#050b0c;
+    --font-weight9:900;
+    --font-weight6:600;
+    --font-weight1:100;
+    --font-size1:1vmax;
+    --font-size2:1.5vmax;
+    --font-size3:3vmax;
+    --font-size4:5vmax;
+} 
+
+body, h1, h2, h3, h4, h5, h6, input, textarea, select {
+	  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    font-size:var(--font-size1);
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color:var(--w-color);
+    background:var(--b-color);
+}
+
+.wrap {
+    width: 100%;
+    height: 8000px;
+}
+
+.haram-section1 {
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+
+.haram-section1>.haram-top-btn {
+    bottom: 5%;
+    right: 3%;
+    z-index: 1250;
+    cursor: pointer;
+    position: fixed;
+}
+.haram-top-btn>img:nth-child(1) {
+    top: 75px;
+    left: 90px;
+    position: absolute;
+}
+
+.haram-section1>video {
+    top: -35px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    position: absolute;
+}
+
+/* header off */
+.hd-off {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 120px;
+    z-index: 1500;
+    position: absolute;
+}
+
+.hd-off>h1 {
+    top: 35px;
+    left: 44.5%;
+    position: absolute;
+}
+
+.haram-main-menu {
+    top: 0px;
+    left: 2%;
+    width: 40%;
+    height: 120px;
+    position: absolute;
+}
+.haram-main-menu>li {
+    float: left;
+    height: 120px;
+    position: relative;
+    color: #fff;
+    font-size: 1vmax;
+    font-weight: 320;
+    text-align: center;
+    line-height: 120px;
+}
+.haram-main-menu>li:nth-child(1) { width: 15%; }
+.haram-main-menu>li:nth-child(2) { width: 18%; }
+.haram-main-menu>li:nth-child(3) { width: 13%; }
+.haram-main-menu>li:nth-child(4) { width: 22.5%; }
+.haram-main-menu>li:nth-child(5) { width: 15%; }
+
+.haram-sub-menu {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.haram-sub-menu>li {
+    height: 30px;
+    font-size: 0.8vmax;
+    line-height: 30px;
+}
+
+.haram-sub-menu>li>a:hover { text-decoration: underline; }
+.haram-main-menu>li:hover>.haram-sub-menu { height: 200px; }
+
+.haram-icon-menu {
+    top: 0px;
+    right: 3%;
+    width: 40%;
+    height: 120px;
+    position: absolute;
+}
+.haram-icon-menu>li {
+    float: left;
+    position: absolute;
+}
+.haram-icon-menu>li:nth-child(1) { top: 43.5px; right: 18.5%; }
+.haram-icon-menu>li:nth-child(2) { top: 49px; right: 10%; }
+.haram-icon-menu>li:nth-child(3) { top: 46px; right: 0%; }
+
+/* header on */
