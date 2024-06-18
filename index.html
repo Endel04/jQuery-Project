@@ -8,22 +8,76 @@
         <!-- css link -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/font.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/haram_style.css">
 
         <!-- Font Awesome link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- script link -->
         <script src="js/jquery-1.7.2.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/haram_script.js"></script>
+        <script src="js/jQueryRotateCompressed.js"></script>
         <title>제목</title>
     </head>
-    <body>
+    <body scroll="no">
         <div class="wrap">
             <!-- 메인 페이지 -->
             <section class="haram-section1">
-                <header>
-                    <ul class="haram-main-menu">
+                <header class="hd-off">
+                    <ul class="haram-off-main-menu">
+                        <li><a href="#">그룹소개
+                            <ul class="haram-sub-menu">
+                                <li><a href="#">기업소개</a></li>
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">브랜드 스토리</a></li>
+                            </ul>
+                        </a></li>
+
+                        <li><a href="#">사업분야
+                            <ul class="haram-sub-menu">
+                                <li><a href="#">그룹사 현황</a></li>
+                                <li><a href="#">우주항공·오션·방산</a></li>
+                                <li><a href="#">에너지·소재</a></li>
+                                <li><a href="#">금융</a></li>
+                                <li><a href="#">유통·서비스</a></li>
+                            </ul>
+                        </a></li>
+
+                        <li><a href="#">뉴스룸
+                            <ul class="haram-sub-menu">
+                                <li><a href="#">뉴스룸 메인</a></li>
+                                <li><a href="#">미디어센터</a></li>
+                                <li><a href="#">한화저널</a></li>
+                            </ul>
+                        </a></li>
+
+                        <li><a href="#">지속가능경영
+                            <ul class="haram-sub-menu">
+                                <li><a href="#">Overview</a></li>
+                                <li><a href="#">Environment</a></li>
+                                <li><a href="#">Social</a></li>
+                                <li><a href="#">Governance</a></li>
+                            </ul>
+                        </a></li>
+
+                        <li><a href="#">인재채용</a></li>
+                    </ul>
+
+                    <h1><a href="#"><img src="images/main/logo.png"></a></h1>
+
+                    <ul class="haram-icon-menu">
+                        <li><a href="#"><img src="images/main/hub.png"></a></li>
+                        <li><a href="#"><img src="images/main/search.png"></a></li>
+                        <li class="btn-category"><a href="#"><img src="images/main/sitemap.png"></a></li>
+                    </ul>
+                </header>
+
+                <header class="hd-on">
+                    <h1><a href="#"><img src="images/main/logo.png"></a></h1>
+                    <h1 class="btn-close"><a href="#"><img src="images/main/close.png"></a></h1>
+
+                    <ul class="haram-on-main-menu">
                         <li><a href="#">그룹소개</a></li>
                         <li><a href="#">사업분야</a></li>
                         <li><a href="#">뉴스룸</a></li>
@@ -31,24 +85,36 @@
                         <li><a href="#">인재채용</a></li>
                     </ul>
 
-                    <h1><img src="images/main/logo.png"></h1>
+                    <ul class="haram-intro-menu">
+                        <li>
+                            <p class="haram-intro-topic">그룹소개</p>
+                            <p class="haram-intro-title">우리 업종에 맞는 기획부터 수행까지<br>지면부터 타겟까지</p>
+                            <a class="haram-intro-arrow" href="#"><img src="images/main/menu-arrow.png"></a>
+                        </li>
 
-                    <ul class="haram-icon-menu">
-                        <li><a href="#"><img src="images/main/hub.png"></a></li>
-                        <li><a href="#"><img src="images/main/search.png"></a></li>
-                        <li><a href="#"><img src="images/main/sitemap.png"></a></li>
+                        <li>
+                            <p class="haram-intro-topic">그룹소개</p>
+                            <p class="haram-intro-title">우리 업종에 맞는 기획부터 수행까지<br>지면부터 타겟까지</p>
+                            <a class="haram-intro-arrow" href="#"><img src="images/main/menu-arrow.png"></a>
+                        </li>
+
+                        <li>
+                            <p class="haram-intro-topic">그룹소개</p>
+                            <p class="haram-intro-title">우리 업종에 맞는 기획부터 수행까지<br>지면부터 타겟까지</p>
+                            <a class="haram-intro-arrow" href="#"><img src="images/main/menu-arrow.png"></a>
+                        </li>
                     </ul>
                 </header>
 
                 <button class="haram-top-btn">
-                    <img src="images/main/contactTxt.png">
-                    <img src="images/main/top_arrow.png">
+                    <img class="top-btn-arrow" src="images/main/top_arrow.png">
+                    <img class="top-btn-border" src="images/main/contactTxt.png" width="200" height="200">
                 </button>
 
-                <video src="images/main/video.mp4"></video>
+                <video src="images/main/video.mp4" autoplay loop muted></video>
             </section>
 
-            <section class="section2">
+            <!-- <section class="section2">
                 
             </section>
 
@@ -73,8 +139,8 @@
             </section>
 
             <section class="section8">
-                
-            </section>
+
+            </section> -->
         </div>
     </body>
 </html>
