@@ -40,15 +40,15 @@ body {
 }
 
 .haram-section1>.haram-top-btn {
-    bottom: 5%;
+    bottom: -1.5%;
     right: 3%;
-    z-index: 1250;
+    z-index: 1500;
     cursor: pointer;
     position: fixed;
 }
-.haram-top-btn>img:nth-child(1) {
-    top: 75px;
-    left: 90px;
+.haram-top-btn>.top-btn-arrow {
+    top: 55px;
+    left: 69px;
     position: absolute;
 }
 
@@ -67,24 +67,23 @@ body {
     left: 0px;
     width: 100%;
     height: 120px;
-    z-index: 1500;
+    z-index: 1100;
     position: absolute;
 }
-
 .hd-off>h1 {
     top: 35px;
     left: 44.5%;
     position: absolute;
 }
 
-.haram-main-menu {
+.haram-off-main-menu {
     top: 0px;
     left: 2%;
     width: 40%;
     height: 120px;
     position: absolute;
 }
-.haram-main-menu>li {
+.haram-off-main-menu>li {
     float: left;
     height: 120px;
     position: relative;
@@ -94,11 +93,11 @@ body {
     text-align: center;
     line-height: 120px;
 }
-.haram-main-menu>li:nth-child(1) { width: 15%; }
-.haram-main-menu>li:nth-child(2) { width: 18%; }
-.haram-main-menu>li:nth-child(3) { width: 13%; }
-.haram-main-menu>li:nth-child(4) { width: 22.5%; }
-.haram-main-menu>li:nth-child(5) { width: 15%; }
+.haram-off-main-menu>li:nth-child(1) { width: 15%; }
+.haram-off-main-menu>li:nth-child(2) { width: 18%; }
+.haram-off-main-menu>li:nth-child(3) { width: 13%; }
+.haram-off-main-menu>li:nth-child(4) { width: 22.5%; }
+.haram-off-main-menu>li:nth-child(5) { width: 15%; }
 
 .haram-sub-menu {
     width: 100%;
@@ -113,7 +112,7 @@ body {
 }
 
 .haram-sub-menu>li>a:hover { text-decoration: underline; }
-.haram-main-menu>li:hover>.haram-sub-menu { height: 200px; }
+.haram-off-main-menu>li:hover>.haram-sub-menu { height: 200px; }
 
 .haram-icon-menu {
     top: 0px;
@@ -131,3 +130,72 @@ body {
 .haram-icon-menu>li:nth-child(3) { top: 46px; right: 0%; }
 
 /* header on */
+.hd-on {
+    /* display: none; */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1000px;
+    z-index: 1200;
+    position: absolute;
+    background-color: #000;
+}
+.hd-on>h1:nth-child(1) {
+    top: 35px;
+    left: 2%;
+    position: absolute;
+}
+.hd-on>h1:nth-child(2) {
+    top: 46px;
+    right: 3%;
+    position: absolute;
+}
+
+.haram-on-main-menu {
+    bottom: 2.5%;
+    left: 19.5%;
+    width: 530px;
+    height: 850px;
+    transform: rotate(-90deg);
+    position: absolute;
+}
+.haram-on-main-menu>li {
+    height: 170px;
+    color: #7e7e7e;
+    font-size: 5vmax;
+    font-weight: 700;
+}
+.haram-on-main-menu>li>a { transition: all 0.5s; }
+.haram-on-main-menu>li>a:hover { color: #fff; }
+
+.haram-intro-menu {
+    bottom: 20%;
+    right: 9.8%;
+    width: 20.2%;
+    z-index: 1300;
+    position: absolute;
+}
+.haram-intro-menu>li {
+    margin-bottom: 60px;
+    position: relative;
+}
+.haram-intro-menu>li:nth-child(3) { margin-bottom: 0px; }
+.haram-intro-menu>li>.haram-intro-topic {
+    margin-bottom: 20px;
+    color: #7e7e7e;
+    font-size: 0.8vmax;
+    font-weight: 450;
+}
+.haram-intro-menu>li>.haram-intro-title {
+    font-size: 1.05vmax;
+    font-weight: 350;
+    line-height: 26px;
+}
+.haram-intro-menu>li>.haram-intro-arrow {
+    display: block;
+    bottom: 0px;
+    right: 0px;
+    width: 58px;
+    height: 58px;
+    position: absolute;
+}

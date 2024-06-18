@@ -3,6 +3,6 @@ $(function() {
 
     setInterval(function() {
         angle += 1;
-        $(".btn-rotate").rotate(angle);
+        $(".top-btn-border").rotate(angle);
     }, 50);
 });
